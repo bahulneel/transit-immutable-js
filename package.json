@@ -3,6 +3,14 @@
   "version": "0.8.0",
   "description": "Transit serialisation for Immutable.js",
   "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
   "scripts": {
     "test:3": "npm install --no-save immutable@^3.7.4 && mocha",
     "test:4": "npm install --no-save immutable@^4.0.0-rc.12 && mocha",
