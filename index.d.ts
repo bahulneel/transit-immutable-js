@@ -3,7 +3,7 @@
 // Definitions by: [Your Name] <[your.email@example.com]>
 // TypeScript Version: 4.x
 module 'transit-immutable-js' {
-  import { RecordFactory } from 'immutable';
+  import type { RecordFactory } from 'immutable';
 
   export type RecordClass = RecordFactory<any>;
   export type MissingRecordHandler = (name: string, value: any) => any;
