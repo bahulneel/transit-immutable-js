@@ -2,10 +2,10 @@
 // Project: https://github.com/glenjamin/transit-immutable-js
 // Definitions by: [Your Name] <[your.email@example.com]>
 // TypeScript Version: 4.x
-module 'transit-immutable-js' {
-  import type { RecordFactory } from 'immutable';
+declare module 'transit-immutable-js' {
+  import type { Record } from 'immutable';
 
-  export type RecordClass = RecordFactory<any>;
+  export type RecordClass = Record.Factory<any>;
   export type MissingRecordHandler = (name: string, value: any) => any;
   export type ExtraHandler = {
     tag: string;
@@ -33,7 +33,7 @@ module 'transit-immutable-js' {
   /**
    * The default transit-immutable-js instance.
    */
-  declare const transit: TransitInstance;
+  const transit: TransitInstance;
 
   export default transit;
 
